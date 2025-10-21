@@ -1,3 +1,12 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  line-height: 1.55;
+  font-family: "Inter", sans-serif;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -6,6 +15,22 @@ main {
 
 main p {
   max-width: 800px;
+}
+
+main > p {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
 }
 
 nav ul {
@@ -33,33 +58,42 @@ a:hover img {
 
 #projects h2 {
   text-align: center;
-  margin-bottom: 2rem;
+  margin: 2.5rem 0 1.25rem;
 }
 
 #projects .cards {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
 }
 
 .project-card {
-  width: 45%;
+  width: 100%;
+  max-width: 900px;
+}
+
+.project-card a {
+  display: block;
 }
 
 .project-card img {
-  max-width: 100%;
-  width: 400px;
+  display: block;
+  width: 100%;
   height: auto;
   border-radius: 6px;
 }
 
-@media (max-width: 900px) {
-  .project-card {
-    width: 100%;
-    max-width: 100%;
-    max-width: 500px;
+.project-content .links {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  #projects .cards {
+    gap: 2rem;
   }
 }
