@@ -18,7 +18,7 @@ main p {
 }
 
 main > p {
-  margin-bottom: 2rem;
+  margin-bottom: 0.75rem;
 }
 
 h1 {
@@ -48,7 +48,9 @@ nav ul a {
 
 a img {
   cursor: pointer;
-  transition: transform 200ms ease, opacity 200ms ease;
+  transition:
+    transform 200ms ease,
+    opacity 200ms ease;
 }
 
 a:hover img {
